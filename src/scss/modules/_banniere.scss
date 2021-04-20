@@ -1,0 +1,21 @@
+.banniere {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 100%;
+  background-image: url("../img/banner-bg.jpg");
+  background-size: 100% 100%;
+  * {
+    color: white;
+  }
+  *:not(p:last-of-type) {
+    text-transform: uppercase;
+  }
+
+  a {
+    text-decoration: none;
+    background-color: rgb(242, 116, 95);
+  }
+}
