@@ -1,0 +1,121 @@
+.section_home-page {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section1 {
+  width: 55%;
+  border: 2px solid yellow;
+  .section1_header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    border: 2px solid green;
+    text-align: center;
+    img {
+      height: 150px;
+      width: 150px;
+    }
+    .number-contact {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 5px;
+      background-color: rgb(242, 116, 95);
+      height: 200px;
+      width: 200px;
+      * {
+        margin-top: 5px;
+        text-transform: uppercase;
+      }
+      *:not(a) {
+        width: 100%;
+        color: white;
+      }
+      h4 {
+        font-size: 15px;
+      }
+    }
+    .number {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      p:first-of-type {
+        font-size: 10px;
+        margin-bottom: 5px;
+      }
+      p {
+        width: fit-content;
+        border: 2px solid purple;
+      }
+
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+    a {
+      color: rgb(242, 116, 95);
+      background-color: white;
+      padding: 10px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 12px;
+      //   margin-top: 5px;
+    }
+  }
+
+  .section1_footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .section1_footer-card {
+      border: 2px solid blue;
+      img {
+        height: 125px;
+        width: 125px;
+      }
+      p {
+        text-align: center;
+      }
+    }
+  }
+}
+
+/*media queries .section1*/
+@media (max-width: 426px) {
+  .section1 {
+    min-width: 320px;
+
+    .section1_header {
+      flex-direction: column;
+
+      height: fit-content;
+
+      img,
+      .number-contact {
+        width: 100%;
+      }
+
+      .number-contact {
+        h4 {
+          font-size: max(3vw, 8px);
+        }
+      }
+    }
+    .section1_footer {
+      flex-direction: column;
+      .section1_footer-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+      }
+    }
+  }
+}

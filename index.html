@@ -32,17 +32,121 @@
         <a href="#">order right now</a>
       </div>
     </header>
-    <section>
+    <section class="section_home-page">
       <div class="section1">
         <div class="section1_header">
           <img src="./public/img/cook_01.jpg" alt="" />
-          <div class="number-contact"></div>
+          <div class="number-contact">
+            <h4>we cook delicious</h4>
+            <div class="number">
+              <p>you can call us on:</p>
+              <p>+1234 567 8910</p>
+            </div>
+            <p>or</p>
+            <a href="#">order now</a>
+          </div>
           <img src="./public/img/cook_02.jpg" alt="" />
         </div>
-        <div class="section1_footer"></div>
+        <div class="section1_footer">
+          <div class="section1_footer-card">
+            <img src="./public/img/cook_breakfast.png" alt="" />
+            <p>breakfast</p>
+          </div>
+          <div class="section1_footer-card">
+            <img src="./public/img/cook_lunch.png" alt="" />
+            <p>lunch</p>
+          </div>
+          <div class="section1_footer-card">
+            <img src="./public/img/cook_dinner.png" alt="" />
+            <p>dinner</p>
+          </div>
+          <div class="section1_footer-card">
+            <img src="./public/img/cook_dessert.png" alt="" />
+            <p>dessert</p>
+          </div>
+        </div>
       </div>
-      <div class="section2"></div>
+      <div class="section2">
+        <div class="section2_header">
+          <h2>book your table now</h2>
+          <div class="container-form">
+            <img src="./public/img/book_left_image.jpg" alt="" />
+            <div class="form-reservation">
+              Reservation
+              <form action="">
+                <div class="form-content">
+                  <select name="" id="jour-semaine">
+                    <option selected="selected" class="select-default">
+                      Select day
+                    </option>
+                    <option value="lundi">lundi</option>
+                    <option value="mardi">mardi</option>
+                    <option value="mercredi">mercredi</option>
+                    <option value="jeudi">jeudi</option>
+                    <option value="vendredi">vendredi</option>
+                    <option value="samedi">samedi</option>
+                    <option value="dimanche">dimanche</option>
+                  </select>
+
+                  <input type="text" placeholder="fullname" />
+                  <select name="" id="nbre-personne">
+                    <option selected="selected" class="select-default">
+                      How many persons
+                    </option>
+
+                    <option value="2">2</option>
+                    <option value="4">4</option>
+                    <option value="6">6</option>
+                  </select>
+                </div>
+
+                <div class="form-content">
+                  <select name="" id="heure-reservation">
+                    <option selected="selected" class="select-default">
+                      Select hour
+                    </option>
+                    <option value="16H-18h">16H-18h</option>
+                    <option value="18h-20h">18h-20h</option>
+                    <option value="20h-22H">20h-22H</option>
+                  </select>
+                  <input type="text" placeholder="Phone number" />
+                  <button type="submit">book table</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="section2_footer">
+          <h2>get application for your phone</h2>
+          <a href="">download now</a>
+        </div>
+      </div>
       <div class="section3"></div>
     </section>
+    <footer class="d-flex justify-content-around bg-footer text-light">
+      <div>
+        <p>Copyright © 2020 Victory Template</p>
+      </div>
+      <div>
+        <a class="iconF m-1 bg-light rounded-circle" href=""
+          ><i class="fab fa-facebook-f text-footer"></i
+        ></a>
+        <a class="iconT m-1 bg-light rounded-circle" href=""
+          ><i class="fab fa-twitter text-footer"></i
+        ></a>
+        <a class="iconL m-1 bg-light rounded-circle" href=""
+          ><i class="fab fa-linkedin-in text-footer"></i
+        ></a>
+        <a class="iconR m-1 bg-light rounded-circle" href=""
+          ><i class="fas fa-wifi text-footer"></i
+        ></a>
+        <a class="iconB m-1 bg-light rounded-circle" href=""
+          ><i class="fas fa-basketball-ball text-footer"></i
+        ></a>
+      </div>
+      <div>
+        <p>Design: TemplateMo</p>
+      </div>
+    </footer>
   </body>
 </html>
