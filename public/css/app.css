@@ -16501,10 +16501,88 @@ nav ul li a {
   }
 }
 .section3 {
-  height: 350px;
+  height: fit-content;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+.section3 h2 {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+.section3 .section3-container_card {
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%;
+  border: 2px solid yellow;
+}
+.section3 .section3-container_card .section3-card {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  border: 2px solid red;
+  background-color: #f2f6ff;
+  padding: 10px;
+}
+.section3 .section3-container_card .section3-card h3 {
+  font-size: 20px;
+  border-bottom: 1px solid rgba(123, 123, 123, 0.2);
+  margin-bottom: 20px;
+}
+.section3 .section3-container_card .section3-card .card {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid green;
+  height: 227px;
+}
+.section3 .section3-container_card .section3-card .card .bg1 {
+  background-image: url("../img/breakfast_item.jpg");
+}
+.section3 .section3-container_card .section3-card .card .bg2 {
+  background-image: url("../img/lunch_item.jpg");
+}
+.section3 .section3-container_card .section3-card .card .bg3 {
+  background-image: url("../img/dinner_item.jpg");
+}
+.section3 .section3-container_card .section3-card .card .bg-img_card {
+  min-height: 50%;
+  position: relative;
+  background-size: 100% 100%;
+}
+.section3 .section3-container_card .section3-card .card .bg-img_card span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #f2745f;
+}
+.section3 .section3-container_card .section3-card .card .text_card {
+  height: 100%;
+  padding: 15px;
+}
+.section3 .section3-container_card .section3-card .card .text_card h4 {
+  font-size: 15px;
+}
+.section3 .section3-container_card .section3-card .card .text_card p {
+  font-size: 11px;
 }
 
+@media (max-width: 1020px) {
+  .section3 .section3-container_card {
+    flex-direction: column;
+    align-items: center;
+  }
+  .section3 .section3-container_card .section3-card {
+    width: 50%;
+    min-width: 319px;
+  }
+  .section3 .section3-container_card .section3-card .card {
+    height: 250px;
+  }
+}
 .book {
   background-image: url(../../../public/img/book-bg.jpg);
 }
