@@ -22,4 +22,13 @@
 }
 
 @media (max-width: 768px) {
+  .blog {
+    .banniere-blog {
+      p {
+        text-align: center;
+        width: 50%;
+        margin-bottom: 5px;
+      }
+    }
+  }
 }
