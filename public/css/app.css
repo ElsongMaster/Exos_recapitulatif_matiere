@@ -16207,6 +16207,10 @@ body {
   text-transform: uppercase;
 }
 
+.blog header h1 {
+  text-transform: uppercase;
+}
+
 nav {
   background-color: #eaf0ff;
   height: 200px;
@@ -16240,7 +16244,7 @@ nav ul li a {
   color: rgba(0, 0, 0, 0.6);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   nav ul {
     flex-direction: column;
   }
@@ -16772,6 +16776,86 @@ footer div p {
   footer div:last-of-type {
     order: 3;
   }
+}
+.blog .banniere-blog {
+  height: 250px;
+  width: 100%;
+  background-image: url("../img/heading-bg.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.blog .banniere-blog * {
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+.blog .banniere-blog h1 {
+  margin-bottom: 15px;
+}
+
+.section-blog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.section-blog .article-blog {
+  display: flex;
+  flex-direction: column;
+  height: 450px;
+  width: 50%;
+  margin-bottom: 15px;
+  border: 2px solid tomato;
+}
+.section-blog .article-blog .article-bg1 {
+  background-image: url("../img/blog_post_01.jpg");
+}
+.section-blog .article-blog .article-bg2 {
+  background-image: url("../img/blog_post_02.jpg");
+}
+.section-blog .article-blog .article-bg3 {
+  background-image: url("../img/blog_post_03.jpg");
+}
+.section-blog .article-blog .article-bg4 {
+  background-image: url("../img/blog_post_04.jpg");
+}
+.section-blog .article-blog .article-bg_img {
+  height: 50%;
+  width: 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  border: 2px solid green;
+  position: relative;
+}
+.section-blog .article-blog .article-bg_img span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #f2745f;
+}
+.section-blog .article-blog .article-text_container {
+  position: relative;
+  height: 50%;
+  width: 100%;
+  padding: 20px;
+  background-color: #f2f6ff;
+}
+.section-blog .article-blog .article-text_container h4 {
+  font-size: 20px;
+}
+.section-blog .article-blog .article-text_container p {
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+.section-blog .article-blog .article-text_container p:last-of-type {
+  position: absolute;
+  bottom: 10px;
+  text-transform: uppercase;
+  color: #f2745f;
 }
 
 /*# sourceMappingURL=app.css.map */
