@@ -45,7 +45,7 @@
             }
           }
           .form-content {
-            border: 2px solid purple;
+            // border: 2px solid purple;
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
@@ -54,7 +54,7 @@
               border-top: none;
               border-left: none;
               border-right: none;
-              border-bottom: 2px solid rgba(123, 123, 123, 0.5);
+              //   border-bottom: 2px solid rgba(123, 123, 123, 0.5);
               width: 80%;
             }
 
@@ -94,10 +94,10 @@
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 768px) {
   .section2 {
     .section2_header {
-      border: 2px solid yellow;
+      //   border: 2px solid yellow;
       height: fit-content;
       h2 {
         font-size: max(3.5vw, 20px);
@@ -105,13 +105,13 @@
 
       .container-form {
         flex-direction: column;
-        border: 2px solid red;
+        // border: 2px solid red;
         min-width: 285px;
         padding: 25px;
         img,
         .form-reservation {
           width: 100%;
-          border: 2px solid green;
+          //   border: 2px solid green;
         }
         img {
           height: 200px;
