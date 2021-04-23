@@ -17048,8 +17048,21 @@ nav ul li a {
     margin-top: 5px;
   }
 }
+.banner {
+  background-image: url(../../../public/img/heading-bg.jpg);
+  background-size: cover;
+  height: 260px;
+}
+
 .book {
   background-image: url(../../../public/img/book-bg.jpg);
+  background-size: cover;
+}
+
+.button {
+  background-color: #f2745f;
+  border: solid #f2745f;
+  border-radius: 3px;
 }
 
 footer {
@@ -17080,7 +17093,6 @@ footer div p {
   font-size: 12px;
 }
 
-<<<<<<< HEAD
 @media (max-width: 600px) {
   footer {
     display: flex;
@@ -17218,23 +17230,6 @@ footer div p {
     text-transform: uppercase;
     color: #f2745f;
   }
-=======
-.banner {
-  background-image: url(../../../public/img/heading-bg.jpg);
-  background-size: cover;
-  height: 260px;
-}
-
-.book {
-  background-image: url(../../../public/img/book-bg.jpg);
-  background-size: cover;
-}
-
-.button {
-  background-color: #f2745f;
-  border: solid #f2745f;
-  border-radius: 3px;
->>>>>>> d7ca033db8308af7596319829c76288485b3096f
 }
 
 /*# sourceMappingURL=app.css.map */
