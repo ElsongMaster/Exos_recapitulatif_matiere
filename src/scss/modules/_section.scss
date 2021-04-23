@@ -1,4 +1,15 @@
+.banner{
+    background-image: url(../../../public/img/heading-bg.jpg);
+    background-size: cover;
+    height: 260px;
+}
+
 .book {
     background-image: url(../../../public/img/book-bg.jpg);
-    
+    background-size: cover;
+}
+.button {
+    background-color: rgb(242,116,95);
+    border: solid rgb(242,116,95);
+    border-radius: 3px;
 }
