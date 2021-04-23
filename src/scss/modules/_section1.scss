@@ -23,7 +23,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      padding: 5px;
+      padding: 10px;
       background-color: rgb(242, 116, 95);
       height: 200px;
       width: 200px;
@@ -37,6 +37,9 @@
       }
       h4 {
         font-size: 15px;
+      }
+      p {
+        margin: 5px;
       }
     }
     .number {
@@ -88,21 +91,22 @@
 
 /*media queries .section1*/
 
-@media (max-width: 880px) {
+@media (max-width: 1024px) {
   .section1 {
     .section1_header {
       flex-direction: column;
 
       height: fit-content;
 
-      img,
-      .number-contact {
-        width: 100%;
-      }
+      .container-form {
+        .number-contact {
+          width: 100%;
+        }
 
-      .number-contact {
-        h4 {
-          font-size: max(3vw, 8px);
+        .number-contact {
+          h4 {
+            font-size: max(3vw, 8px);
+          }
         }
       }
     }

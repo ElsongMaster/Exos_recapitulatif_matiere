@@ -16300,7 +16300,7 @@ nav ul li a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 5px;
+  padding: 10px;
   background-color: #f2745f;
   height: 200px;
   width: 200px;
@@ -16315,6 +16315,9 @@ nav ul li a {
 }
 .section1 .section1_header .number-contact h4 {
   font-size: 15px;
+}
+.section1 .section1_header .number-contact p {
+  margin: 5px;
 }
 .section1 .section1_header .number {
   display: flex;
@@ -16354,16 +16357,15 @@ nav ul li a {
 }
 
 /*media queries .section1*/
-@media (max-width: 880px) {
+@media (max-width: 1024px) {
   .section1 .section1_header {
     flex-direction: column;
     height: fit-content;
   }
-  .section1 .section1_header img,
-.section1 .section1_header .number-contact {
+  .section1 .section1_header .container-form .number-contact {
     width: 100%;
   }
-  .section1 .section1_header .number-contact h4 {
+  .section1 .section1_header .container-form .number-contact h4 {
     font-size: max(3vw, 8px);
   }
 }
@@ -16393,7 +16395,7 @@ nav ul li a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 300px;
+  height: 400px;
   background-image: url("../img/book-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -16424,14 +16426,13 @@ nav ul li a {
 }
 .section2 .section2_header .container-form .form-reservation form {
   display: flex;
+  height: 80%;
 }
 .section2 .section2_header .container-form .form-reservation form select option:first-child {
   color: rgba(0, 0, 0, 0.2);
 }
-.section2 .section2_header .container-form .form-reservation form select option {
-  color: red;
-}
 .section2 .section2_header .container-form .form-reservation form .form-content {
+  border: 2px solid purple;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -16441,13 +16442,18 @@ nav ul li a {
   border-top: none;
   border-left: none;
   border-right: none;
+  border-bottom: 1px solid rgba(123, 123, 123, 0.5);
+}
+.section2 .section2_header .container-form .form-reservation form .form-content * {
   width: 80%;
+  outline: none;
 }
 .section2 .section2_header .container-form .form-reservation form .form-content button {
   border: none;
   background-color: #f2745f;
   color: white;
-  padding: 10px;
+  padding: 7px 0;
+  margin-top: 5px;
   border-radius: 5px;
 }
 .section2 .section2_footer {
@@ -16455,7 +16461,7 @@ nav ul li a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100px;
+  height: 200px;
   background-color: #f2745f;
 }
 .section2 .section2_footer * {
@@ -16463,13 +16469,17 @@ nav ul li a {
 }
 .section2 .section2_footer h2 {
   color: white;
+  font-size: 20px;
 }
 .section2 .section2_footer a {
-  margin-top: 5px;
+  text-decoration: none;
+  margin-top: 10px;
   color: #f2745f;
   background-color: white;
   padding: 10px;
   border-radius: 5px;
+  text-transform: uppercase;
+  font-size: 13px;
 }
 
 @media (max-width: 768px) {
