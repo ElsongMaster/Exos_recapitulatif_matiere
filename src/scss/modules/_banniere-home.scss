@@ -14,11 +14,33 @@
     text-transform: uppercase;
   }
 
+  p:last-of-type {
+    width: 80%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
   a {
     text-decoration: none;
     background-color: rgb(242, 116, 95);
     padding: 10px 15px;
     border-radius: 5px;
     font-size: 12px;
+  }
+}
+
+@media (max-width: 424px) {
+  .banniere {
+    *:not(a) {
+      width: 100%;
+      text-align: center;
+    }
+    h1 {
+      font-size: max(8vw, 25px);
+    }
+    p {
+      width: 80%;
+      font-size: max(3.5vw, 13px);
+    }
   }
 }

@@ -16730,7 +16730,7 @@ readers do not read off random characters that represent icons */
 
 html,
 body {
-  width: 98vw;
+  width: 100vw;
   min-width: 340px;
 }
 
@@ -16797,6 +16797,11 @@ nav ul li a {
 .banniere *:not(p:last-of-type) {
   text-transform: uppercase;
 }
+.banniere p:last-of-type {
+  width: 80%;
+  text-align: center;
+  margin-bottom: 20px;
+}
 .banniere a {
   text-decoration: none;
   background-color: #f2745f;
@@ -16805,6 +16810,19 @@ nav ul li a {
   font-size: 12px;
 }
 
+@media (max-width: 424px) {
+  .banniere *:not(a) {
+    width: 100%;
+    text-align: center;
+  }
+  .banniere h1 {
+    font-size: max(8vw, 25px);
+  }
+  .banniere p {
+    width: 80%;
+    font-size: max(3.5vw, 13px);
+  }
+}
 .section_home-page {
   width: 100%;
   display: flex;
@@ -16835,6 +16853,7 @@ nav ul li a {
   background-color: #f2745f;
   height: 200px;
   width: 200px;
+  min-width: 200px;
 }
 .section1 .section1_header .number-contact * {
   margin-top: 5px;
@@ -16879,6 +16898,9 @@ nav ul li a {
   align-items: center;
   flex-wrap: wrap;
 }
+.section1 .section1_footer .section1_footer-card {
+  margin: 0 auto;
+}
 .section1 .section1_footer .section1_footer-card img {
   height: 125px;
   width: 125px;
@@ -16888,26 +16910,47 @@ nav ul li a {
 }
 
 /*media queries .section1*/
-@media (max-width: 1024px) {
-  .section1 .section1_header {
-    flex-direction: column;
-    height: fit-content;
+@media (max-width: 768px) {
+  .section1 {
+    width: 98%;
   }
   .section1 .section1_header .container-form .number-contact {
     width: 100%;
+  }
+  .section1 .section1_header .container-form .number-contact {
+    padding: 0;
   }
   .section1 .section1_header .container-form .number-contact h4 {
     font-size: max(3vw, 8px);
   }
 }
-@media (max-width: 476px) {
+@media (max-width: 550px) {
+  .section1 .section1_header img {
+    display: none;
+  }
+  .section1 .section1_header .number-contact {
+    height: 225px;
+    width: 250px;
+  }
+}
+@media (max-width: 424px) {
   .section1 {
     min-width: 320px;
+    width: 100%;
+    margin: 20px 0;
+  }
+  .section1 .section1_header {
+    width: 100%;
+  }
+  .section1 .section1_header img,
+.section1 .section1_header .number-contact {
+    width: 100%;
   }
   .section1 .section1_header .number-contact h4 {
     font-size: max(3vw, 8px);
   }
   .section1 .section1_footer {
+    margin-top: 20px;
     flex-direction: column;
   }
   .section1 .section1_footer .section1_footer-card {
@@ -16940,12 +16983,14 @@ nav ul li a {
 }
 .section2 .section2_header .container-form {
   display: flex;
-  width: 60%;
+  width: 65%;
   height: 60%;
+}
+.section2 .section2_header .container-form img {
+  width: 40%;
 }
 .section2 .section2_header .container-form img,
 .section2 .section2_header .container-form .form-reservation {
-  width: 100%;
   height: 100%;
 }
 .section2 .section2_header .container-form .form-reservation {
@@ -16954,20 +16999,25 @@ nav ul li a {
   justify-content: space-evenly;
   align-items: center;
   background-color: white;
+  width: 100%;
 }
 .section2 .section2_header .container-form .form-reservation form {
   display: flex;
   height: 80%;
+  width: 100%;
 }
-.section2 .section2_header .container-form .form-reservation form select option:first-child {
-  color: rgba(0, 0, 0, 0.2);
+.section2 .section2_header .container-form .form-reservation form select {
+  color: grey;
+}
+.section2 .section2_header .container-form .form-reservation form select option:not(.select-default) {
+  color: black;
 }
 .section2 .section2_header .container-form .form-reservation form .form-content {
-  border: 2px solid purple;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  width: 100%;
 }
 .section2 .section2_header .container-form .form-reservation form .form-content *:not(button) {
   border-top: none;
@@ -17013,38 +17063,67 @@ nav ul li a {
   font-size: 13px;
 }
 
-@media (max-width: 768px) {
-  .section2 .section2_header {
-    height: fit-content;
+@media (max-width: 1024px) {
+  .section2 .section2_header .container-form img {
+    display: none;
   }
-  .section2 .section2_header h2 {
-    font-size: max(3.5vw, 20px);
-  }
-  .section2 .section2_header .container-form {
-    flex-direction: column;
-    min-width: 285px;
-    padding: 25px;
-  }
-  .section2 .section2_header .container-form img,
-.section2 .section2_header .container-form .form-reservation {
+  .section2 .section2_header .container-form .form-reservation {
+    height: 100%;
     width: 100%;
   }
-  .section2 .section2_header .container-form img {
-    height: 200px;
+  .section2 .section2_header .container-form .form-reservation form {
+    height: 100%;
+    width: 100%;
+  }
+  .section2 .section2_header .container-form .form-reservation form .form-content {
+    height: 100%;
+    width: 100%;
   }
 }
-@media (min-width: 320px) and (max-width: 680px) {
-  .section2 .section2_header .container-form img,
-.section2 .section2_header .container-form .form-reservation {
-    width: max(100%, 225px);
+@media (max-width: 768px) {
+  .section2 .section2_header .container-form img {
+    display: none;
+  }
+  .section2 .section2_header .container-form .form-reservation {
+    height: 100%;
+    width: 100%;
+  }
+  .section2 .section2_header .container-form .form-reservation form {
+    height: 100%;
+    width: 100%;
+  }
+  .section2 .section2_header .container-form .form-reservation form .form-content {
+    width: 100%;
+  }
+}
+@media (max-width: 425px) {
+  .section2 .section2_header {
+    height: 400px;
+  }
+  .section2 .section2_header .container-form {
+    height: 80%;
+    width: 70%;
+  }
+  .section2 .section2_header .container-form img {
+    display: none;
+  }
+  .section2 .section2_header .container-form .form-reservation {
+    height: 100%;
+    width: 100%;
+    margin: 0;
   }
   .section2 .section2_header .container-form .form-reservation form {
     flex-direction: column;
     justify-content: space-between;
+    height: 100%;
     width: 100%;
   }
   .section2 .section2_header .container-form .form-reservation form .form-content {
-    height: max(15vw, 110px);
+    width: 100%;
+    height: 100%;
+  }
+  .section2 .section2_footer a {
+    font-size: max(1.5vw, 15px);
   }
 }
 .section3 {
@@ -17069,8 +17148,10 @@ nav ul li a {
   display: flex;
   flex-direction: column;
   width: 30%;
+  min-width: 224px;
   background-color: #f2f6ff;
   padding: 10px;
+  margin-bottom: 30px;
 }
 .section3 .section3-container_card .section3-card h3 {
   font-size: 20px;
@@ -17115,6 +17196,9 @@ nav ul li a {
 }
 
 @media (max-width: 760px) {
+  .section3 {
+    justify-content: space-evenly;
+  }
   .section3 .section3-container_card {
     flex-direction: column;
     align-items: center;
@@ -17125,6 +17209,18 @@ nav ul li a {
   }
   .section3 .section3-container_card .section3-card .card {
     height: 350px;
+  }
+  .section3 .section3-container_card .section3-card .card .text_card {
+    padding: 20px;
+  }
+  .section3 .section3-container_card .section3-card .card .text_card h4 {
+    margin-top: 10px;
+    font-size: max(2.8vw, 18px);
+  }
+  .section3 .section3-container_card .section3-card .card .text_card p {
+    margin-top: 15px;
+    width: 80%;
+    font-size: max(1.5vw, 12px);
   }
 }
 .section4 {
@@ -17184,14 +17280,62 @@ nav ul li a {
 .section4 .section4-row .section4-content .section4-content_text {
   background-color: white;
   width: 100%;
+  height: 100%;
+  padding: 15px;
 }
 .section4 .section4-row .section4-content .section4-content_text h4 {
+  margin-top: 10px;
   font-size: 13px;
 }
 .section4 .section4-row .section4-content .section4-content_text p {
   font-size: 11px;
+  margin-top: 10px;
+}
+.section4 .section4-row .section4-content .section4-content_text a {
+  text-decoration: none;
+  font-size: max(1vw, 13px);
+  text-transform: uppercase;
+  color: #f2745f;
 }
 
+@media (max-width: 1024px) {
+  .section4 {
+    background-color: #f2f6ff;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+  }
+  .section4 * {
+    margin: 0;
+    padding: 0;
+  }
+  .section4 h2 {
+    margin-bottom: 25px;
+  }
+  .section4 .section4-row {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    height: fit-content;
+    margin-bottom: 20px;
+  }
+  .section4 .section4-row .section4-content {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+  }
+  .section4 .section4-row .section4-content .section4-bg_img,
+.section4 .section4-row .section4-content .section4-content_text {
+    min-height: 180px;
+  }
+  .section4 .section4-row .section4-content .section4-content_text p:last-of-type {
+    margin-bottom: max(1vw, 10px);
+  }
+}
 @media (max-width: 768px) {
   .section4 {
     height: fit-content;
@@ -17199,29 +17343,36 @@ nav ul li a {
   .section4 .section4-row {
     flex-direction: column;
     height: fit-content;
+    width: 70%;
     align-items: center;
   }
   .section4 .section4-row .section4-content {
-    height: 225px;
-    width: 80%;
+    height: fit-content;
+    width: 100%;
     margin-bottom: 20px;
   }
-  .section4 .section4-row .section4-content .section4-bg_img {
-    height: 100%;
-    width: 100%;
+  .section4 .section4-row .section4-content .section4-bg_img,
+.section4 .section4-row .section4-content .section4-content_text {
+    min-height: 300px;
   }
-  .section4 .section4-row .section4-content .section4-content_text {
-    height: 100%;
+  .section4 .section4-row .section4-content .section4-content_text h4 {
+    font-size: max(2.8vw, 20px);
+    margin-bottom: 30px;
+  }
+  .section4 .section4-row .section4-content .section4-content_text p {
+    width: 85%;
+    font-size: max(2vw, 13px);
+  }
+  .section4 .section4-row .section4-content .section4-content_text p:last-of-type {
+    margin-bottom: max(8vw, 20px);
+  }
+  .section4 .section4-row .section4-content .section4-content_text a {
+    font-size: max(2.2vw, 14px);
   }
 }
-@media (max-width: 760px) {
-  .section4 .section4-row .section4-content {
-    flex-direction: column;
-    height: 350px;
-  }
-  .section4 .section4-row .section4-content .section4-bg_img {
-    height: 100%;
-    width: 100%;
+@media (max-width: 425px) {
+  .section4 .section4-row {
+    width: 98%;
   }
 }
 .section5 {
@@ -17255,89 +17406,26 @@ nav ul li a {
 }
 
 @media (max-width: 768px) {
+  .section5 h2 {
+    font-size: max(4vw, 20px);
+    width: 100%;
+    text-align: center;
+  }
   .section5 form {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+  .section5 form input {
+    height: max(4.5vw, 30px);
+    width: max(35vw, 200px);
+  }
   .section5 form button {
     width: fit-content;
     margin-top: 5px;
+    font-size: 0.9em;
   }
 }
-.banner {
-  background-image: url(../../../public/img/heading-bg.jpg);
-  background-size: cover;
-  height: 260px;
-}
-
-.book {
-  background-image: url(../../../public/img/book-bg.jpg);
-  background-size: cover;
-}
-
-.button {
-  background-color: #f2745f;
-  border: solid #f2745f;
-  border-radius: 3px;
-}
-
-footer {
-  height: 100px;
-  padding-top: 3%;
-}
-footer div .iconF {
-  padding: 7px 12px;
-}
-footer div .iconT {
-  padding: 7px 9px;
-}
-footer div .iconL {
-  padding: 7px 10px;
-}
-footer div .iconR {
-  padding: 7px 7px;
-}
-footer div .iconB {
-  padding: 7px 10px;
-}
-footer div p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  height: 25px;
-  font-size: 12px;
-}
-
-<<<<<<< HEAD
-@media (max-width: 600px) {
-  footer {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: fit-content;
-  }
-  footer > div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  footer div:first-of-type {
-    order: 2;
-  }
-  footer div:nth-of-type(2) {
-    order: 1;
-  }
-  footer div:last-of-type {
-    order: 3;
-  }
-}
-.blog .banniere-blog {
-  height: 250px;
-  width: 100%;
-  background-image: url("../img/heading-bg.jpg");
-=======
 nav {
   background-color: #eaf0ff;
   height: 200px;
@@ -17587,7 +17675,69 @@ nav ul li a {
 }
 .banner {
   background-image: url(../../../public/img/heading-bg.jpg);
->>>>>>> 72a812db8b6bc880446b1ddf7040c5e32dd628d7
+  background-size: cover;
+  height: 260px;
+}
+
+.book {
+  background-image: url(../../../public/img/book-bg.jpg);
+  background-size: cover;
+}
+
+footer {
+  height: 100px;
+  padding-top: 3%;
+}
+footer div .iconF {
+  padding: 7px 12px;
+}
+footer div .iconT {
+  padding: 7px 9px;
+}
+footer div .iconL {
+  padding: 7px 10px;
+}
+footer div .iconR {
+  padding: 7px 7px;
+}
+footer div .iconB {
+  padding: 7px 10px;
+}
+footer div p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  height: 25px;
+  font-size: 12px;
+}
+
+@media (max-width: 600px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+  }
+  footer > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer div:first-of-type {
+    order: 2;
+  }
+  footer div:nth-of-type(2) {
+    order: 1;
+  }
+  footer div:last-of-type {
+    order: 3;
+  }
+}
+.blog .banniere-blog {
+  height: 250px;
+  width: 100%;
+  background-image: url("../img/heading-bg.jpg");
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -17624,7 +17774,7 @@ nav ul li a {
   flex-direction: column;
   height: 500px;
   width: 50%;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 .section-blog .article-blog .article-bg1 {
   background-image: url("../img/blog_post_01.jpg");
@@ -17674,7 +17824,6 @@ nav ul li a {
   color: #f2745f;
 }
 
-<<<<<<< HEAD
 @media (max-width: 1024px) {
   .section-blog .article-blog {
     height: fit-content;
@@ -17701,7 +17850,29 @@ nav ul li a {
     color: #f2745f;
   }
 }
+@media (max-width: 768px) {
+  .section-blog {
+    width: 100%;
+  }
+  .section-blog .article-blog {
+    width: 80%;
+    height: 582px;
+  }
+  .section-blog .article-blog .article-text_container h4 {
+    font-size: max(3.2vw, 18px);
+  }
+  .section-blog .article-blog .article-text_container p {
+    width: 90%;
+    font-size: max(2vw, 13px);
+  }
+}
+@media (max-width: 425px) {
+  .section-blog {
+    width: 100%;
+  }
+  .section-blog .article-blog {
+    width: 98%;
+  }
+}
 
-=======
->>>>>>> 72a812db8b6bc880446b1ddf7040c5e32dd628d7
 /*# sourceMappingURL=app.css.map */

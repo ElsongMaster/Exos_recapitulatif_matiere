@@ -11,7 +11,7 @@
     flex-direction: column;
     height: 500px;
     width: 50%;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     // border: 2px solid tomato;
     .article-bg1 {
       background-image: url("../img/blog_post_01.jpg");
@@ -95,6 +95,36 @@
           color: rgb(242, 116, 95);
         }
       }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .section-blog {
+    width: 100%;
+    .article-blog {
+      width: 80%;
+      height: 582px;
+
+      .article-text_container {
+        h4 {
+          font-size: max(3.2vw, 18px);
+        }
+
+        p {
+          width: 90%;
+          font-size: max(2vw, 13px);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .section-blog {
+    width: 100%;
+    .article-blog {
+      width: 98%;
     }
   }
 }

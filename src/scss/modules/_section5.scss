@@ -32,14 +32,23 @@
 
 @media (max-width: 768px) {
   .section5 {
+    h2 {
+      font-size: max(4vw, 20px);
+      width: 100%;
+      text-align: center;
+    }
     form {
       display: flex;
       flex-direction: column;
       align-items: center;
-
+      input {
+        height: max(4.5vw, 30px);
+        width: max(35vw, 200px);
+      }
       button {
         width: fit-content;
         margin-top: 5px;
+        font-size: 0.9em;
       }
     }
   }
